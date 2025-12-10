@@ -23,8 +23,6 @@
  * THE SOFTWARE.
  * ===================================================================== 
 """
-#!/usr/bin/env python3
-
 from huggingface_hub import snapshot_download, hf_hub_download
 from pathlib import Path
 import argparse
