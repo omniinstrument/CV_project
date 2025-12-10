@@ -1,6 +1,7 @@
 build
 install
 log
-VIO_stripped
-VIO_20251206_140818
+dataset/VIO_stripped
 *.stl
+dataset/meshes
+.cache
