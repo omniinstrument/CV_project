@@ -37,7 +37,7 @@ declare -A DOCKER_BUILDS=(
 # ------------------------------------------------------------------------------
 
 # Build dependencies must form a DAG:
-# base   → CUDA/conda base
+# base   → ubuntu base
 # ros    → base
 # cyclone   → ros
 # python  → cyclone
