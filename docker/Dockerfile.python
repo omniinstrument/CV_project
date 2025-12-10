@@ -11,14 +11,15 @@ ARG USER_GID=$USER_UID
 RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update && apt-get install -y --no-install-recommends \
         python3-pip \
-        python3-venv
+        python3-venv \
+        qt6-base-dev
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     python3 -m venv /opt/venv && \
     /opt/venv/bin/pip install --no-warn-script-location --no-build-isolation \
         open3d \
         numpy \
-        scipy
+        scipy 
 
 # DO NOT modify PATH — leave system Python as default
 ENV VENV_PATH=/opt/venv

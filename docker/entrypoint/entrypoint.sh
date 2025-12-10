@@ -9,7 +9,7 @@ is_built() {
 build_ws() {
     echo "[entrypoint] Building ROS 2 workspace..."
     cd "${WS}"
-    source /opt/ros/jazzy/setup.bash && colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --parallel-workers $(nproc)
+    source /opt/ros/jazzy/setup.bash && colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --parallel-workers $(nproc) && cd
 }
 
 source_ws() {

@@ -113,6 +113,9 @@ docker run -it --rm \
   -v "$HOME/.Xauthority":/root/.Xauthority \
   -v $(pwd)/ros2_ws:/home/${USERNAME}/ros2_ws \
   --user "${HOST_UID}:${HOST_GID}" \
-  --workdir /home/${USERNAME}/ros2_ws \
+  --workdir /home/${USERNAME}/output \
   --entrypoint /usr/local/bin/scripts/entrypoint.sh \
+  -v $(pwd)/dataset:/home/${USERNAME}/dataset \
+  -v $(pwd)/src/compute_metrics.py:/home/${USERNAME}/compute_metrics.py \
+  -v $(pwd)/output:/home/${USERNAME}/output \
   "${RUN_IMAGE}" /bin/bash
