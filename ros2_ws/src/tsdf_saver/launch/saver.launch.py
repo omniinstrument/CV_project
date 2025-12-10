@@ -149,7 +149,7 @@ def generate_launch_description():
     )
 
     # ==============================================================
-    #  Shutdown logic: 10 seconds after bag finishes
+    #  Shutdown logic: 20 seconds after bag finishes
     # ==============================================================
 
     delayed_shutdown = RegisterEventHandler(
