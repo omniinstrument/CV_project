@@ -19,5 +19,5 @@ RUN --mount=type=cache,target=/root/.cache/pip \
         && \
     conda clean -afy
 
-USER ${USERNAME}
-WORKDIR /home/${USERNAME}
+COPY docker/entrypoint/entrypoint.sh /usr/local/bin/scripts/entrypoint.sh
+RUN chmod +x /usr/local/bin/scripts/entrypoint.sh

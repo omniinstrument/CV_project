@@ -13,7 +13,9 @@ RUN --mount=type=cache,target=/var/cache/apt \
     && apt update \
     && apt install -y ros-dev-tools \
     && apt upgrade -y \
-    && apt install -y ros-jazzy-desktop ros-jazzy-stereo-msgs ros-jazzy-depth-image-proc ros-jazzy-image-pipeline ros-jazzy-pcl-ros \
+    && apt install -y ros-jazzy-desktop ros-jazzy-stereo-msgs \
+    ros-jazzy-depth-image-proc ros-jazzy-image-pipeline \
+    ros-jazzy-pcl-ros ros-jazzy-ament-cmake \
     && rm -rf /var/lib/apt/lists/* /tmp/ros2-apt-source.deb
 
 # Persist sourcing of ROS + workspace

@@ -111,5 +111,8 @@ docker run -it --rm \
   -e XDG_RUNTIME_DIR=/tmp/runtime-root \
   -v /tmp/runtime-root:/tmp/runtime-root \
   -v "$HOME/.Xauthority":/root/.Xauthority \
+  -v $(pwd)/ros2_ws:/home/${USERNAME}/ros2_ws \
   --user "${HOST_UID}:${HOST_GID}" \
-  "${RUN_IMAGE}"
+  --workdir /home/${USERNAME}/ros2_ws \
+  --entrypoint /usr/local/bin/scripts/entrypoint.sh \
+  "${RUN_IMAGE}" /bin/bash
