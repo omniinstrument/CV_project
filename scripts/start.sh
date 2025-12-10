@@ -118,4 +118,5 @@ docker run -it --rm \
   -v $(pwd)/dataset:/home/${USERNAME}/dataset \
   -v $(pwd)/src/compute_metrics.py:/home/${USERNAME}/compute_metrics.py \
   -v $(pwd)/output:/home/${USERNAME}/output \
+  -v $(pwd)/src/download_datasets.py:/home/${USERNAME}/download_datasets.py \
   "${RUN_IMAGE}" /bin/bash
