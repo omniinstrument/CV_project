@@ -44,8 +44,9 @@ from launch_ros.descriptions import ComposableNode
 def generate_launch_description():
 
     home = os.path.expanduser("~")
-    default_config_path = os.path.join(home, "ros2_ws/src/tsdf_saver/config/custom.yaml")
-    default_bag_path = os.path.join(home, "dataset/VIO_20251206_140818")
+    default_config_path = os.path.join(home, "ros2_ws", "src", "tsdf_saver", "config", "custom.yaml")
+    default_bag_path = os.path.join(home, "dataset", "VIO_stripped")
+    qos_yaml = os.path.join(home, "dataset", "qos_override.yaml")
 
 
     bag_path = LaunchConfiguration("bag")
@@ -138,7 +139,12 @@ def generate_launch_description():
     # ==============================================================
 
     bag_proc = ExecuteProcess(
-        cmd=["ros2", "bag", "play", bag_path, "--clock"],
+        cmd=[
+            "ros2", "bag", "play",
+            bag_path,
+            "--clock",
+            "--qos-profile-overrides-path", qos_yaml
+        ],
         output="screen"
     )
 
@@ -153,7 +159,7 @@ def generate_launch_description():
                 TimerAction(
                     period=20.0,
                     actions=[
-                        Shutdown(reason="Bag finished; shutting down after 10 seconds")
+                        Shutdown(reason="Bag finished; shutting down after 20 seconds")
                     ]
                 )
             ]

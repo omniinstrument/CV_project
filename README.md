@@ -8,5 +8,5 @@ ros2 launch tsdf_saver saver.launch.py
 ```
 
 ```shell
-/opt/venv/bin/python /home/$(whoami)/compute_metrics.py
+/opt/venv/bin/python /home/$(whoami)/compute_metrics.py #--view
 ```
