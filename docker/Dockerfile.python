@@ -7,17 +7,21 @@ ARG USERNAME=appuser
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-SHELL ["/bin/bash", "-lc"]
+# Install pip + venv
+RUN --mount=type=cache,target=/var/cache/apt \
+    apt-get update && apt-get install -y --no-install-recommends \
+        python3-pip \
+        python3-venv
 
 RUN --mount=type=cache,target=/root/.cache/pip \
-    source /opt/conda/etc/profile.d/conda.sh && \
-    conda activate eval3d && \
-    pip install --no-warn-script-location --no-build-isolation \
+    python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --no-warn-script-location --no-build-isolation \
         open3d \
         numpy \
-        scipy \
-        && \
-    conda clean -afy
+        scipy
+
+# DO NOT modify PATH — leave system Python as default
+ENV VENV_PATH=/opt/venv
 
 COPY docker/entrypoint/entrypoint.sh /usr/local/bin/scripts/entrypoint.sh
 RUN chmod +x /usr/local/bin/scripts/entrypoint.sh

@@ -1,22 +1,14 @@
 # syntax=docker/dockerfile:1.19.0
 ARG BASE_FROM
-# ------------------------------------------------------------------------------
-# Stage 1 — get a clean Miniconda layout (pinned)
-# ------------------------------------------------------------------------------
-FROM continuumio/miniconda3:main AS conda
-# ------------------------------------------------------------------------------
-# Stage 2 — CUDA runtime + copy Miniconda in
-# ------------------------------------------------------------------------------
+
 FROM ${BASE_FROM} AS base
 
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Los_Angeles
-ENV CONDA_DIR=/opt/conda
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
-ENV PATH="${CONDA_DIR}/bin:${PATH}"
 
 # system packages
 RUN --mount=type=cache,target=/var/cache/apt \
@@ -53,14 +45,3 @@ RUN if ! getent group ${USER_GID} >/dev/null; then \
     fi \
  && echo "${USERNAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
  && chown -R ${USERNAME}:${USERNAME} /opt 
-
-# copy conda tree from official Miniconda stage (fast, reproducible)
-COPY --from=conda /opt/conda ${CONDA_DIR}
-
-# create env with conda and use buildkit cache for conda pkg downloads
-# note: this RUN uses a cache mount for $CONDA_DIR/pkgs
-RUN --mount=type=cache,target=${CONDA_DIR}/pkgs \
-    conda config --system --set auto_activate_base false && \
-    conda create -y -n eval3d python=3.12 && \
-    echo ". ${CONDA_DIR}/etc/profile.d/conda.sh" >> /etc/bash.bashrc && \
-    conda clean -afy
