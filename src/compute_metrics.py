@@ -123,7 +123,7 @@ if __name__ == "__main__":
     import argparse
 
     home = os.path.expanduser("~")
-    default_gt_path = os.path.join(home, "dataset", "omni_mesh.stl")
+    default_gt_path = os.path.join(home, "dataset", "meshes", "omni_mesh.stl")
     default_recon_path = os.path.join(home, "output", "mesh.stl")
 
     parser = argparse.ArgumentParser("SDF comparison evaluator")
