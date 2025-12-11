@@ -58,3 +58,6 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 ```shell
 /opt/venv/bin/python /home/$(whoami)/compute_metrics.py #--view
 ```
+<p align="center">
+  <img src="assets/mesh_compare.png" width="1000" style="object-fit:fill;">
+</p>
