@@ -80,3 +80,19 @@ The ROS 2 bag files has the following topics, you can these to generate a Metric
 | /zed/zedxm/left/color/rect/image/camera_info        | sensor_msgs/msg/CameraInfo |
 | /zed/zedxm/left/gray/rect/image                     | sensor_msgs/msg/Image      |
 | /zed/zedxm/left/gray/rect/image/camera_info         | sensor_msgs/msg/CameraInfo |
+
+#### TF Frames
+The stereo pair exposes two TF frames — **zed_left_camera_frame_optical** and **zed_right_camera_frame_optical** — whose relative transform encodes the **baseline** between the cameras. This baseline is required for converting disparity into metric depth. 
+<p align="center">
+<pre>
+                        +-----------------------+
+                        |      Stereo Rig       |
+                        +-----------------------+
+                              (baseline)
+                <------------------------------------->  
+          left_camera ---------------------------right_camera
+                ^                                      ^
+                |                                      |
+  zed_left_camera_frame_optical           zed_right_camera_frame_optical
+</pre>
+</p>
