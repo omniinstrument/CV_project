@@ -3,7 +3,7 @@
 <div align="justify">
 This project provides a minimal ROS 2 pipeline for generating a 3D reconstruction from a prerecorded dataset. All components of the reconstruction stack, point cloud generation, odometry, and TSDF fusion are already implemented.<br><br>
 
-Your task is only to produce a metric depth map for each frame.<br><br>
+Your task is only to produce a metric depth map for each frame.<br>
 
 The system will:
 - Convert your depth map into a point cloud
