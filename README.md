@@ -121,6 +121,14 @@ The stereo pair exposes two TF frames — ```zed_left_camera_frame_optical``` an
 </pre>
 </p>
 
+## Launch file
+The [launch file](ros2_ws/src/tsdf_saver/launch/saver.launch.py) must be modifed to include your custom ROS 2 package if needed. There is section to include to your ROS 2 node, ensure the topics are remapped below. 
+
+### ROS 2 package
+You can start by creating a ROS 2 package for computing the metric depth map. There is enough information and ROS 2 topics to generate this information. 
+
+You can refer to the [offical documentation](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). 
+
 ## Instructions
 - You are free to generate depth maps any way possible, this includes classical methods or using Neural Networks. 
 - You are free to use any external libraries.
