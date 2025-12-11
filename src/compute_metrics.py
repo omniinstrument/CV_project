@@ -147,3 +147,18 @@ if __name__ == "__main__":
     print(f"RMSE          : {metrics.rmse:.4f} m")
     print(f"Max Error     : {metrics.max_error:.4f} m")
     print("=================================\n")
+
+    # ------------------------------------------------------------
+    # Save metrics to metrics.txt in the reconstruction directory
+    # ------------------------------------------------------------
+    recon_dir = os.path.dirname(args.recon)
+    metrics_path = os.path.join(recon_dir, "metrics.txt")
+
+    with open(metrics_path, "w") as f:
+        f.write("===== Volumetric SDF Metrics =====\n")
+        f.write(f"Mean Abs Error : {metrics.mean_abs_error:.4f} m\n")
+        f.write(f"RMSE           : {metrics.rmse:.4f} m\n")
+        f.write(f"Max Error      : {metrics.max_error:.4f} m\n")
+        f.write("=================================\n")
+
+    print(f"Metrics saved to: {metrics_path}")

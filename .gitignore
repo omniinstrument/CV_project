@@ -5,3 +5,4 @@ dataset/VIO_stripped
 *.stl
 dataset/meshes
 .cache
+metrics.txt
