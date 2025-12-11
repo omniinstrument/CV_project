@@ -64,3 +64,18 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 <p align="center">
   $$\color{red}Red$$ = Ground truth mesh | $$\color{lightgreen}Green$$ = Generated mesh
 </p>
+
+## Information
+The ROS 2 bag files has the following topics, you can these to generate a Metric Depth Map
+### ROS 2 Bag Topics
+
+| Topic Name                                          | Message Type               |
+|-----------------------------------------------------|-----------------------------|
+| /zed/zedxm/right/color/rect/image                   | sensor_msgs/msg/Image      |
+| /zed/zedxm/right/color/rect/image/camera_info       | sensor_msgs/msg/CameraInfo |
+| /zed/zedxm/right/gray/rect/image                    | sensor_msgs/msg/Image      |
+| /zed/zedxm/right/gray/rect/image/camera_info        | sensor_msgs/msg/CameraInfo |
+| /zed/zedxm/left/color/rect/image                    | sensor_msgs/msg/Image      |
+| /zed/zedxm/left/color/rect/image/camera_info        | sensor_msgs/msg/CameraInfo |
+| /zed/zedxm/left/gray/rect/image                     | sensor_msgs/msg/Image      |
+| /zed/zedxm/left/gray/rect/image/camera_info         | sensor_msgs/msg/CameraInfo |
