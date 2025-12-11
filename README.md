@@ -16,6 +16,10 @@ You implement just the depth-estimation step. Everything else is handled automat
 This assignment assesses your understanding of geometric vision and metric depth recovery from stereo or other cues. Keep the implementation clean, correct, and deterministic.
 </div>
 
+<p align="center">
+  <img src="assets/neural_depth_demo.gif" width="1000" style="object-fit:fill;">
+</p>
+
 ```shell
 git clone --recursive https://github.com/omniinstrument/CV_project.git
 ```
