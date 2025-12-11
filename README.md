@@ -88,7 +88,7 @@ The stereo pair exposes two TF frames — **zed_left_camera_frame_optical** and 
                         +-----------------------+
                         |      Stereo Rig       |
                         +-----------------------+
-                              (baseline)
+                               (baseline)
                 <------------------------------------->  
           left_camera---------------------------right_camera
                 ^                                      ^
