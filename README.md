@@ -11,7 +11,7 @@ The system will:
 - Build a TSDF volume
 - Export the final mesh
 
-You implement just the depth-estimation step. Everything else is handled automatically.<br><br>
+You implement just the depth-estimation step. Everything else is handled automatically.<br>
 
 This assignment assesses your understanding of geometric vision and metric depth recovery from stereo or other cues. Keep the implementation clean, correct, and deterministic.
 </div>
