@@ -21,6 +21,8 @@ This assignment assesses your understanding of geometric vision and metric depth
 </p>
 
 ## Dependencies
+A Linux Ubuntu computer, or other equivalent. 
+
 You only need to install [Docker](https://docs.docker.com/engine/install/ubuntu/) and follow [Linux Post-Installation](https://docs.docker.com/engine/install/linux-postinstall/) to get started.
 
 ## Getting Started
