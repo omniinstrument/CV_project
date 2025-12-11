@@ -66,7 +66,7 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 </p>
 
 ## Information
-The ROS 2 bag files has the following topics, you can these to generate a Metric Depth Map
+The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/tree/main/VIO_stripped) has the following topics, you can these to generate a Metric Depth Map
 ### ROS 2 Bag Topics
 
 #### Sensor Topics
