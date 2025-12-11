@@ -128,3 +128,11 @@ The stereo pair exposes two TF frames — ```zed_left_camera_frame_optical``` an
 - You are free to perform monouclar depth estimation if that will yeild better results.
 - You are free to use any programming languages like Python, C++, Rust and/or CUDA.
 - **You are not allowed to modify the [compute_metrics](src/compute_metrics.py) file.** But you are allowed to modify rest of the codebase. 
+
+## License
+This software and dataset is released under the [MIT](LICENSE).
+
+## Acknowledgement
+This work integrates several powerful research papers, libraries, and open-source tools:
+
+- [**DB-TSDF**](https://robotics-upo.github.io/DB-TSDF/)
