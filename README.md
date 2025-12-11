@@ -6,7 +6,6 @@ This project provides a minimal ROS 2 pipeline for generating a 3D reconstructio
 Your task is only to produce a metric depth map for each frame.
 
 The system will:
-
 - Convert your depth map into a point cloud
 - Fuse it with provided odometry
 - Build a TSDF volume
