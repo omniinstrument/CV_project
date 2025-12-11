@@ -61,3 +61,7 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 <p align="center">
   <img src="assets/mesh_compare.png" width="1000" style="object-fit:fill;">
 </p>
+<p align="center" style="font-size:14px;">
+  <span style="color:red; font-weight:bold;">Red</span> = Ground truth mesh &nbsp; | &nbsp;
+  <span style="color:green; font-weight:bold;">Green</span> = Generated mesh
+</p>
