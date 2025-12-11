@@ -51,10 +51,13 @@ bash scripts/start.sh
 <details>
   <summary><strong>GPU Support (Optional)</strong></summary>
 If your system includes an NVIDIA GPU, you can enable GPU acceleration inside Docker.
+
 ```shell
 bash scripts/start_cuda.sh
 ```
+
 > Make sure to change base image based on you CUDA version, which can be checked using ```nvidia-smi```
+
 </details>
 
 ## Demo
