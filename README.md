@@ -90,7 +90,7 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 </p>
 
 ## Dataset
-The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/tree/main/VIO_stripped) has the following topics, you can these to generate a Metric Depth Map
+The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/tree/main/VIO_stripped) has the following topics, you can these to generate a Metric Depth Map.
 ### ROS 2 Bag Topics
 
 #### Sensor Topics
@@ -128,6 +128,10 @@ The stereo pair exposes two TF frames — ```zed_left_camera_frame_optical``` an
 - You are free to perform monouclar depth estimation if that will yeild better results.
 - You are free to use any programming languages like Python, C++, Rust and/or CUDA.
 - **You are not allowed to modify the [compute_metrics](src/compute_metrics.py) file.** But you are allowed to modify rest of the codebase. 
+
+
+## Bugs/Support
+If you come across any bugs or have questions feel free to open an Issue or reach out to Jagennath Hari(hari@omniinstrument.com).
 
 ## License
 This software and dataset is released under the [MIT License](LICENSE).
