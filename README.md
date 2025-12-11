@@ -106,7 +106,7 @@ The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/t
 | /zed/zedxm/left/gray/rect/image/camera_info         | sensor_msgs/msg/CameraInfo |
 
 #### TF Frames
-The stereo pair exposes two TF frames — **zed_left_camera_frame_optical** and **zed_right_camera_frame_optical** — whose relative transform encodes the **baseline** between the cameras. This baseline is required for converting disparity into metric depth. 
+The stereo pair exposes two TF frames — ```zed_left_camera_frame_optical``` and ```zed_right_camera_frame_optical``` — whose relative transform encodes the ```baseline``` between the cameras. This baseline is required for converting disparity into metric depth. 
 <p align="center">
 <pre>
                         +-----------------------+
