@@ -130,7 +130,7 @@ The stereo pair exposes two TF frames — ```zed_left_camera_frame_optical``` an
 - **You are not allowed to modify the [compute_metrics](src/compute_metrics.py) file.** But you are allowed to modify rest of the codebase. 
 
 ## License
-This software and dataset is released under the [MIT](LICENSE).
+This software and dataset is released under the [MIT License](LICENSE).
 
 ## Acknowledgement
 This work integrates several powerful research papers, libraries, and open-source tools:
