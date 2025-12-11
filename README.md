@@ -1,7 +1,7 @@
 # Computer Vision Project
 
 <div align="justify">
-This project provides a minimal ROS 2 pipeline for generating a 3D reconstruction from a prerecorded dataset. All components of the reconstruction stack, point cloud generation, odometry, and TSDF fusion—are already implemented.
+This project provides a minimal ROS 2 pipeline for generating a 3D reconstruction from a prerecorded dataset. All components of the reconstruction stack, point cloud generation, odometry, and TSDF fusion are already implemented.
 
 Your task is only to produce a metric depth map for each frame.
 
