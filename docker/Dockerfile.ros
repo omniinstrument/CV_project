@@ -18,10 +18,10 @@ RUN --mount=type=cache,target=/var/cache/apt \
     ros-jazzy-pcl-ros ros-jazzy-ament-cmake \
     && rm -rf /var/lib/apt/lists/* /tmp/ros2-apt-source.deb
 
-# Persist sourcing of ROS + workspace
+# Persist sourcing of ROS
 RUN echo "source /opt/ros/jazzy/setup.bash" >> /etc/bash.bashrc
 
-# Install Cyclone DDS RMW
+# Install Extra Libraries
 RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update && apt-get install -y --no-install-recommends \
     libceres-dev libann-dev

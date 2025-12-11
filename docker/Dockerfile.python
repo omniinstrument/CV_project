@@ -21,7 +21,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
         scipy \
         huggingface_hub
 
-# DO NOT modify PATH — leave system Python as default
+# Set VENV PATH
 ENV VENV_PATH=/opt/venv
 
 COPY docker/entrypoint/entrypoint.sh /usr/local/bin/scripts/entrypoint.sh
