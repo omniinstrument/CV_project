@@ -67,7 +67,7 @@ The ROS 2 bag file already has metric depth topic from the camera, you are tryin
 ```shell
 ros2 launch tsdf_saver saver.launch.py
 ```
-At the end the launch file should automatically save a mesh(.stl) and stop/close the system after 20 secs.
+At the end the launch file should automatically save a mesh(```.stl```) and stop/close the system after 20 secs.
 
 > The generated mesh is saved in the [output](output) folder.
 
