@@ -47,6 +47,12 @@ At the end the launch file should automatically save a mesh(.stl) and stop/close
 
 > The generated mesh is saved in the [output](output) folder.
 
+You can use RVIZ2 to visualize the results.
+
+<p align="center">
+  <img src="assets/zed_demo.gif" width="1000" style="object-fit:fill;">
+</p>
+
 ### Comparing the Mesh against the Ground Truth
 We are providing the ground truth mesh, and a basic code to compute the error/metrics. Use that to iterate upon your solution.
 ```shell
