@@ -69,6 +69,7 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 The ROS 2 bag files has the following topics, you can these to generate a Metric Depth Map
 ### ROS 2 Bag Topics
 
+#### Sensor Topics
 | Topic Name                                          | Message Type               |
 |-----------------------------------------------------|-----------------------------|
 | /zed/zedxm/right/color/rect/image                   | sensor_msgs/msg/Image      |
