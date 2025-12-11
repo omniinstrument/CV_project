@@ -25,6 +25,16 @@ A Linux Ubuntu computer, or other equivalent.
 
 You only need to install [Docker](https://docs.docker.com/engine/install/ubuntu/) and follow [Linux Post-Installation](https://docs.docker.com/engine/install/linux-postinstall/) to get started.
 
+<details>
+  <summary><strong>GPU Support (Optional)</strong></summary>
+
+If your system includes an NVIDIA GPU, you can enable GPU acceleration inside Docker.
+
+**Install:**
+- [NVIDIA GPU drivers](https://www.nvidia.com/en-us/drivers/)
+- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+</details>
+
 ## Getting Started
 Clone the repo
 ```shell
@@ -37,6 +47,15 @@ bash scripts/start.sh
 > This will automatically run a multi-stage docker container creation, pull all the datasets from Hugging Face too and build the ROS 2 workspace.
 
 > Dataset download will occur only once.
+
+<details>
+  <summary><strong>GPU Support (Optional)</strong></summary>
+If your system includes an NVIDIA GPU, you can enable GPU acceleration inside Docker.
+```shell
+bash scripts/start_cuda.sh
+```
+> Make sure to change base image based on you CUDA version, which can be checked using ```nvidia-smi```
+</details>
 
 ## Demo
 The ROS 2 bag file already has metric depth topic from the camera, you are trying to recreate or implement your own. But this is a good start and demo.
