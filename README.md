@@ -127,7 +127,11 @@ The [launch file](ros2_ws/src/tsdf_saver/launch/saver.launch.py) must be modifed
 ### ROS 2 package
 You can start by creating a ROS 2 package for computing the metric depth map. There is enough information and ROS 2 topics to generate this information. 
 
-You can refer to the [offical documentation](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). 
+You can refer to the [offical documentation](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
+
+#### Tips
+You can refer to some [classical algorithims](https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html) to come up with a basic solution.
+
 
 ## Instructions
 - You are free to generate depth maps any way possible, this includes classical methods or using Neural Networks. 
