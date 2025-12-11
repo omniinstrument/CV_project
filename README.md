@@ -35,6 +35,7 @@ Start the docker enviroment
 bash scripts/start.sh
 ```
 > This will automatically run a multi-stage docker container creation, pull all the datasets from Hugging Face too and build the ROS 2 workspace.
+
 > Dataset download will occur only once.
 
 ## Demo
