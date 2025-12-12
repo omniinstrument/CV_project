@@ -44,10 +44,12 @@ If your system includes an NVIDIA GPU, you can enable GPU acceleration inside Do
 
 ## Getting Started
 Clone the repo
+
 ```shell
 git clone --recursive https://github.com/omniinstrument/CV_project.git
 ```
-Start the docker enviroment
+Start the Docker environment
+
 ```shell
 bash scripts/start.sh
 ```
@@ -71,11 +73,13 @@ bash scripts/start_cuda.sh
 </details>
 
 ## Demo
-The ROS 2 bag file already has metric depth topic from the camera, you are trying to recreate or implement your own. But this is a good start and demo.
+The ROS 2 bag file already includes a metric depth topic from the camera. You will recreate or implement your own version. But this is a good start and demo.
+
 ```shell
 ros2 launch tsdf_saver saver.launch.py
 ```
-At the end the launch file should automatically save a mesh(`.stl`) and stop/close the system after 20 secs.
+
+At the end, the launch file should automatically save a mesh (`.stl`) and stop/close the system after 20 seconds.
 
 > [!NOTE]
 > The generated mesh is saved in the [output](output) folder.
@@ -99,7 +103,7 @@ We are providing the ground truth mesh, and a basic code to compute the error/me
 </p>
 
 ## Dataset
-The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/tree/main/VIO_stripped) has the following topics, you can these to generate a Metric Depth Map.
+The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/tree/main/VIO_stripped) has the following topics, you can use these to generate a metric depth map.
 ### ROS 2 Bag Topics
 
 #### Sensor Topics
@@ -131,15 +135,15 @@ The stereo pair exposes two TF frames — `zed_left_camera_frame_optical` and `z
 </p>
 
 ## Launch file
-The [launch file](ros2_ws/src/tsdf_saver/launch/saver.launch.py) must be modifed to include your custom ROS 2 package if needed. There is section to include to your ROS 2 node, ensure the topics are remapped below. 
+The [launch file](ros2_ws/src/tsdf_saver/launch/saver.launch.py) must be modified to include your custom ROS 2 package if needed. There is a section to include to your ROS 2 node, ensure the topics are remapped below. 
 
 ### ROS 2 package
-You can start by creating a ROS 2 package for computing the metric depth map. There is enough information and ROS 2 topics to generate this information. 
+You can start by creating a ROS 2 package for computing the metric depth map. There is enough information in the provided ROS 2 topics to generate this data.
 
 You can refer to the [offical documentation](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
 
 #### Tips
-You can refer to some [classical algorithims](https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html) to come up with a basic solution.
+You can refer to some [classical algorithms](https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html) to come up with a basic solution.
 
 
 ## Instructions
@@ -159,7 +163,7 @@ If you come across any bugs or have questions feel free to open an Issue or reac
 ## License
 This software and dataset is released under the [MIT License](LICENSE).
 
-## Acknowledgement
+## Acknowledgment
 This work integrates several powerful research papers, libraries, and open-source tools:
 
 - [**DB-TSDF**](https://robotics-upo.github.io/DB-TSDF/)
