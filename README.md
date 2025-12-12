@@ -1,5 +1,12 @@
 # Computer Vision Project
 
+<p align="center">
+  <a href="https://huggingface.co/OmniInstrument/CV_project">
+    <img src="https://img.shields.io/badge/HuggingFace-Dataset-yellow?logo=huggingface&style=for-the-badge">
+  </a>
+</p>
+
+
 <div align="justify">
 This project provides a minimal ROS 2 pipeline for generating a 3D reconstruction from a prerecorded dataset. All components of the reconstruction stack, point cloud generation, odometry, and TSDF fusion are already implemented.<br><br>
 
