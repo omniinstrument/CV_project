@@ -64,8 +64,8 @@ If your system includes an NVIDIA GPU, you can enable GPU acceleration inside Do
 bash scripts/start_cuda.sh
 ```
 
-> [!NOTE]
 > Make sure to change base image based on you CUDA version, which can be checked using ```nvidia-smi```
+
 > The default base image is ```nvcr.io/nvidia/tensorrt:25.11-py3```, ensure this is changed to match your hardware. 
 
 </details>
