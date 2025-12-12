@@ -1,7 +1,7 @@
 # Computer Vision Project
 
 <p align="center">
-  <a href="https://huggingface.co/OmniInstrument/CV_project">
+  <a href="https://huggingface.co/datasets/OmniInstrument/CV_project">
     <img src="https://img.shields.io/badge/HuggingFace-Dataset-yellow?logo=huggingface&style=for-the-badge">
   </a>
 </p>
