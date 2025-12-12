@@ -102,15 +102,15 @@ The [ROS 2 bag file](https://huggingface.co/datasets/OmniInstrument/CV_project/t
 
 #### Sensor Topics
 | Topic Name                                          | Message Type               |
-|-----------------------------------------------------|-----------------------------|
-| `/zed/zedxm/right/color/rect/image`                   | sensor_msgs/msg/Image      |
-| `/zed/zedxm/right/color/rect/image/camera_info`       | sensor_msgs/msg/CameraInfo |
-| `/zed/zedxm/right/gray/rect/image`                    | sensor_msgs/msg/Image      |
-| `/zed/zedxm/right/gray/rect/image/camera_info`        | sensor_msgs/msg/CameraInfo |
-| `/zed/zedxm/left/color/rect/image`                    | sensor_msgs/msg/Image      |
-| `/zed/zedxm/left/color/rect/image/camera_info`        | sensor_msgs/msg/CameraInfo |
-| `/zed/zedxm/left/gray/rect/image`                     | sensor_msgs/msg/Image      |
-| `/zed/zedxm/left/gray/rect/image/camera_info`         | sensor_msgs/msg/CameraInfo |
+|:-----------------------------------------------------:|:-----------------------------:|
+| `/zed/zedxm/right/color/rect/image`                   | `sensor_msgs/Image`      |
+| `/zed/zedxm/right/color/rect/image/camera_info`       | `sensor_msgs/CameraInfo` |
+| `/zed/zedxm/right/gray/rect/image`                    | `sensor_msgs/Image`      |
+| `/zed/zedxm/right/gray/rect/image/camera_info`        | `sensor_msgs/CameraInfo` |
+| `/zed/zedxm/left/color/rect/image`                    | `sensor_msgs/Image`      |
+| `/zed/zedxm/left/color/rect/image/camera_info`        | `sensor_msgs/CameraInfo` |
+| `/zed/zedxm/left/gray/rect/image`                     | `sensor_msgs/Image`      |
+| `/zed/zedxm/left/gray/rect/image/camera_info`         | `sensor_msgs/CameraInfo` |
 
 #### TF Frames
 The stereo pair exposes two TF frames — `zed_left_camera_frame_optical` and `zed_right_camera_frame_optical` — whose relative transform encodes the `baseline` between the cameras. This baseline is required for converting disparity into metric depth. 
