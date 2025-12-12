@@ -161,7 +161,7 @@ Upload the [output directory](output) and share it with us.
 If you come across any bugs or have questions feel free to open an Issue or reach out to Jagennath Hari(hari@omniinstrument.com).
 
 ## License
-This software and dataset is released under the [MIT License](LICENSE).
+This software and dataset are released under the [MIT License](LICENSE).
 
 ## Acknowledgment
 This work integrates several powerful research papers, libraries, and open-source tools:
