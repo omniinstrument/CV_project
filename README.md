@@ -149,6 +149,8 @@ You can refer to some [classical algorithims](https://docs.opencv.org/4.x/dd/d53
 - You are free to use any programming languages like Python, C++, Rust and/or CUDA.
 - **You are not allowed to modify the [compute_metrics](src/compute_metrics.py) file.** But you are allowed to modify rest of the codebase. 
 
+### Submission
+Upload the [output](output) and share it with us.
 
 ## Bugs/Support
 If you come across any bugs or have questions feel free to open an Issue or reach out to Jagennath Hari(hari@omniinstrument.com).
