@@ -64,9 +64,9 @@ If your system includes an NVIDIA GPU, you can enable GPU acceleration inside Do
 bash scripts/start_cuda.sh
 ```
 
-> Make sure to change base image based on you CUDA version, which can be checked using ```nvidia-smi```
+> Make sure to change base image based on you CUDA version, which can be checked using `nvidia-smi`
 
-> The default base image is ```nvcr.io/nvidia/tensorrt:25.11-py3```, ensure this is changed to match your hardware. 
+> The default base image is `nvcr.io/nvidia/tensorrt:25.11-py3`, ensure this is changed to match your hardware. 
 
 </details>
 
@@ -75,7 +75,7 @@ The ROS 2 bag file already has metric depth topic from the camera, you are tryin
 ```shell
 ros2 launch tsdf_saver saver.launch.py
 ```
-At the end the launch file should automatically save a mesh(```.stl```) and stop/close the system after 20 secs.
+At the end the launch file should automatically save a mesh(`.stl`) and stop/close the system after 20 secs.
 
 > The generated mesh is saved in the [output](output) folder.
 
