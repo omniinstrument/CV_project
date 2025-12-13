@@ -150,7 +150,7 @@ You can refer to some [classical algorithms](https://docs.opencv.org/4.x/dd/d53/
 - You are free to generate depth maps any way possible, this includes classical methods or using Neural Networks. 
 - You are free to use any external libraries.
 - You are free to use AI code editors or AI agents, your code can be 100% AI generated.
-- You are free to perform monouclar depth estimation if that will yeild better results.
+- You are free to perform monocular depth estimation if that will yeild better results.
 - You are free to use any programming languages like Python, C++, Rust and/or CUDA.
 - **You are not allowed to modify the [compute_metrics](src/compute_metrics.py) file.** But you are allowed to modify rest of the codebase. 
 
