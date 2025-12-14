@@ -83,5 +83,7 @@ source_ws
 # Ensure dataset folder completeness before running ROS code
 download_missing_data
 
+cd /home/$(whoami)/output
+
 echo "[entrypoint] Executing command: $*"
 exec "$@"
