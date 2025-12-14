@@ -72,6 +72,16 @@ bash scripts/start_cuda.sh
 
 </details>
 
+## Cyclone DDS tuning
+
+The Linux kernel must be optimized to use large packet sizes. This can be done using the script provided -
+
+```shell
+cd usb_dds_setup && bash install_ipfrag.sh
+```
+
+You can refer to further documentation [here](https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/dds-settings/) or [here](https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html).
+
 ## Demo
 The ROS 2 bag file already includes a metric depth topic from the camera. You will recreate or implement your own version. But this is a good start and demo.
 
@@ -89,6 +99,9 @@ You can use RVIZ2 to visualize the results.
 <p align="center">
   <img src="assets/zed_demo.gif" width="1000" style="object-fit:fill;">
 </p>
+
+> [!WARNING]
+> Incase you get an error like `ros2: failed to increase socket receive buffer size to at least 33554432 bytes, current is 425984 bytes` that means you Linux kernel is not tuned for large packets. 
 
 ### Comparing the Mesh against the Ground Truth
 We are providing the ground truth mesh, and a basic code to compute the error/metrics. Use that to iterate upon your solution.
