@@ -80,6 +80,9 @@ The Linux kernel must be optimized to use large packet sizes. This can be done u
 cd usb_dds_setup && bash install_ipfrag.sh
 ```
 
+> [!NOTE]
+> You need `sudo` to change this.
+
 You can refer to further documentation [here](https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/dds-settings/) or [here](https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html).
 
 ## Demo
