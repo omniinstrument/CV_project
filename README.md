@@ -104,7 +104,7 @@ You can use RVIZ2 to visualize the results.
 </p>
 
 > [!WARNING]
-> Incase you get an error like `ros2: failed to increase socket receive buffer size to at least 33554432 bytes, current is 425984 bytes` that means you Linux kernel is not tuned for large packets. 
+> Incase you get an error like `ros2: failed to increase socket receive buffer size to at least 33554432 bytes, current is 425984 bytes` that means you Linux kernel is not tuned for large packets. Refer to [Cyclone DDS tuning](#cyclone-dds-tuning)
 
 ### Comparing the Mesh against the Ground Truth
 We are providing the ground truth mesh, and a basic code to compute the error/metrics. Use that to iterate upon your solution.
