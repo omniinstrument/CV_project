@@ -74,7 +74,7 @@ bash scripts/start_cuda.sh
 
 ## Cyclone DDS tuning
 
-The Linux kernel must be optimized to use large packet sizes. This can be done using the script provided
+The Linux kernel must be optimized to use large packet sizes. This can be done using the script provided and is done outside docker.
 
 ```shell
 cd usb_dds_setup && bash install_ipfrag.sh
